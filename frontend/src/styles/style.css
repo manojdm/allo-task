@@ -1,0 +1,251 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: rgb(242, 242, 242);
+}
+
+.heading {
+    margin-top: 30px;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container {
+    padding: 30px;
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.foods {
+    flex: 0.65;
+    background: white;
+    margin-right: 20px;
+    padding: 30px 20px;
+    border-radius: 5px;
+}
+
+.foods .header .tags .tag {
+    border: 1px solid rgba(0, 0, 0,0.2);
+    background: transparent;
+    padding: 8px 15px;
+    margin: 5px;
+    font-size: 0.8rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.foods .header .tags .tag.selected,
+.foods .header .tags .tag:hover {
+    background: rgb(248, 249, 255);
+    border: 1px solid rgb(136, 140, 197);   
+}
+
+hr {
+    margin: 20px 0px;
+    border-color: rgba(0, 0, 0,0.1);
+}
+
+.menus {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.menu .img {
+    flex: 0.3;
+}
+
+.menu .details {
+    flex: 0.7;
+    padding: 0px 20px;
+}
+
+.menu img {
+    width: 150px;
+    height: 102px;
+    margin-right: 20px;
+}
+
+.menu .details .note {
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0,0.7);
+}
+
+.menu .details .title {
+    padding: 8px 0px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.menu .details .add-info {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0,0.6);
+    margin: 5px 0px 10px;
+}
+
+.menu .details .add-info .add {
+    margin: 5px 10px;
+}
+
+.menu .details .add-info .bold {
+    color: black
+
+}
+
+.menu .details .add-info .select-drink {
+    display: flex;
+    align-items: center;
+
+}
+
+.menu .details .add-info select {
+    padding: 5px 5px;
+    border: 1px solid rgb(136, 140, 197);
+}
+
+.menu .details .action {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .action .right .price {
+    font-size: 1.1rem;
+    padding: 20px 0px 10px;
+}
+
+.menu .action .right button {
+    border: 1px solid rgb(136, 140, 197);
+    color: rgb(136, 140, 197);
+    background: rgb(248, 249, 255);
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+.foods .pagination {
+    width: 100%;
+}
+
+.foods .pagination ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.foods .pagination li {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    border: 1px solid gray;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.foods .pagination li.current {
+    border: 2px solid rgb(136, 140, 197);
+    background: rgb(248, 249, 255);
+}
+
+.cart {
+    flex: 0.35;
+}
+
+.cart .title {
+    padding: 0px 0px 20px;
+}
+
+.cart .passengers {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart .passengers ul {
+    list-style: none;
+    border: 1px solid rgb(136, 140, 197);
+}
+
+.cart .passengers li {
+    padding: 20px;
+    background: white;
+    border-bottom: 1px solid rgb(136, 140, 197);
+}
+
+.cart .passengers li:first-child {
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-left: 5px solid rgb(136, 140, 197);
+    color: black;
+}
+
+.cart .passengers li {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray !important;
+}
+
+.cart .passengers li span:first-child {
+    color: black;
+}
+
+.cart .passengers li:nth-child(even) {
+    background: rgb(248, 249, 255);
+}
+
+.cart .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.cart .total .price {
+    font-size: 1.1rem;
+}
+
+.cart .total .price-total {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart .total .btn button {
+    border: 1px solid rgb(136, 140, 197);
+    color: rgb(136, 140, 197);
+    background: rgb(255, 255, 255);
+    padding: 8px 25px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+
+button:disabled,
+button[disabled],
+.disabled {
+    background: gray !important;
+    color: white !important;
+    cursor: not-allowed !important;
+}
+
+.fa-trash {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
