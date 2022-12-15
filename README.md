@@ -1,7 +1,9 @@
 # allo-task
 
 Name- Manoj DM
+
 College- PES University
+
 SRN- PES2UG19CS221
 
 # Installing npm packages
